@@ -1,0 +1,3 @@
+clickButton = () =>{
+    alert('clicked');
+}
