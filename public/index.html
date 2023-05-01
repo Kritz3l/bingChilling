@@ -49,15 +49,12 @@
     </div>
     <div class="search-bar">
         <div class="search">
-            <form action="#">
-                <input type="text"
-                       placeholder="What's your mood?"
-                       name="search">
-            </form>
+            <input type="text"
+                   placeholder="What's your mood?"
+                   name="search" id="input">
         </div>
-        <div class="badgeContainer">
-            <div class="badge">
-                <p>Placeholder</p>
+        <div class="badgeContainer" id="badgeContainer">
+            <div class="badge" id="badge" style="display: none; font-size: 1rem; text-indent: 0 !important;">
             </div>
         </div>
     </div>
@@ -94,8 +91,15 @@
         </div>
     </div>
     <div class="give_me_playlist">
-        <button class="button" type="button">Give me a playlist</button>
+        <button class="button" type="button" onclick="createPlaylist()">Give me a playlist</button>
+    </div>
+    <div class="bkgCreated" id="bkgCreated">
+        <div class="divCreated">
+            <p>Playlist has been created</p>
+            <button style="background-color: transparent; border: none; color: #1DB954" onclick="invisible()">OK</button>
+        </div>
     </div>
 </div>
 </body>
+<script src="index.js"></script>
 </html>

@@ -14,6 +14,8 @@ body {
 .home {
     display: flex;
     flex-direction: column;
+
+
 }
 
 .home_text {
@@ -22,6 +24,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-indent: 1rem;
+
 }
 
 .image {
@@ -123,9 +126,26 @@ img {
     margin: 0 0.5rem;
 }
 
-.badge p{
-    font-size: 0.75rem;
-    text-indent: 0 !important;
+.bkgCreated{
+    width: 100%;
+    height: 100vh;
+    /*background-color: #041f0d;*/
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    display: none;
+}
+.divCreated{
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .profile {
@@ -216,12 +236,11 @@ input[type=text] {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-size: 25px;
     font-weight: 700;
     height: 50%;
     padding: 15px 33px;
-    margin-right: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin: 1rem 2rem 1.5rem;
     text-decoration: none;
 }
