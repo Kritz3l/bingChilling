@@ -22,11 +22,11 @@ frontend.listen(frontendport, () => {
     console.log(`Frontend listening on localhost:${frontendport}`)
 })
 
-frontend.get('/', (req, res) => {
+/*frontend.get('/', (req, res) => {
     //res.send('Hello World')
     res.sendFile(path.join(__dirname, '/public/page.html'))
-    /*res.sendFile(path.join(__dirname, '/page.js'))
-    res.sendFile(path.join(__dirname, '/style.css'))*/
-})
+    //res.sendFile(path.join(__dirname, '/public/page.js'))
+    //res.sendFile(path.join(__dirname, '/public/style.css'))
+})*/
 
-frontend.use(express.static('public'));
+frontend.use('/', express.static('public'));

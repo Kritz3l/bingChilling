@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="page.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Bing Chilling - Spotify</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<p>Hello World from html</p>
-<button onclick="clickButton()">click</button>
+<div class="navigation">
+    <div class="container home">
+        <div class="home_text"><img class="image" src="images/home.png" alt="home">Home</div>
+        <div class="home_text"><img class="image" src="images/search.png" alt="search">Search</div>
+    </div>
+    <div class="container">
+        <div class="pastPlaylist">
+            <p>Your past Playlists</p>
+            <div class="individualItems">
+                <div class="playlistImage"><img src="images/sad_girl_hours.jfif" alt="sad_girl_hours"></div>
+                <div class="playlistName">
+                    <div class="name"> Sad girl hours</div>
+                    <div class="author">bing-chilling</div>
+                </div>
+            </div>
+            <div class="individualItems">
+                <div class="playlistImage"><img src="images/happy_metal.jfif" alt="happy_metal"></div>
+                <div class="playlistName">
+                    <div class="name"> Happy Metal</div>
+                    <div class="author">bing-chilling</div>
+                </div>
+            </div>
+            <div class="individualItems">
+                <div class="playlistImage"><img src="images/depressing_kpop.jfif" alt="depressing_kpop"></div>
+                <div class="playlistName">
+                    <div class="name"> Depressing Kpop</div>
+                    <div class="author">bing-chilling</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="content">
+    <div class="profile">
+        <p>Good evening</p>
+        <img class="profile-image" src="images/profile.png" alt="profile">
+    </div>
+    <div class="search-bar">
+        <div class="search">
+            <form action="#">
+                <input type="text"
+                       placeholder="What's your mood?"
+                       name="search">
+            </form>
+        </div>
+        <div class="badgeContainer">
+            <div class="badge">
+                <p>Placeholder</p>
+            </div>
+        </div>
+    </div>
+    <div class="genre-container"><p>Genres</p>
+        <div class="genres">
+
+            <div class="single-genre">
+                <div class="genre-image"><img src="images/kpop_genre.jfif" alt="kpop"></div>
+                <div class="genre-text">K-Pop</div>
+            </div>
+            <div class="single-genre">
+                <div class="genre-image"><img class="genre-image-class" src="images/metal_genre.jpg" alt="metal"></div>
+                <div class="genre-text">Metal</div>
+            </div>
+            <div class="single-genre">
+                <div class="genre-image"><img class="genre-image-class" src="images/pop_genre.jfif" alt="pop"></div>
+                <div class="genre-text">Pop</div>
+            </div>
+            <div class="single-genre">
+                <div class="genre-image"><img class="genre-image-class" src="images/country_genre.jfif" alt="country">
+                </div>
+                <div class="genre-text">Country</div>
+            </div>
+            <div class="single-genre">
+                <div class="genre-image"><img class="genre-image-class" src="images/accoustic_genre.jpg"
+                                              alt="accoustic"></div>
+                <div class="genre-text">Accoustic</div>
+            </div>
+            <div class="single-genre">
+                <div class="genre-image"><img class="genre-image-class" src="images/classic_genre.jfif" alt="classic">
+                </div>
+                <div class="genre-text">Classic</div>
+            </div>
+        </div>
+    </div>
+    <div class="give_me_playlist">
+        <button class="button" type="button">Give me a playlist</button>
+    </div>
+</div>
 </body>
 </html>
