@@ -29,4 +29,4 @@ frontend.listen(frontendport, () => {
     //res.sendFile(path.join(__dirname, '/public/style.css'))
 })*/
 
-frontend.use('/', express.static('public'));
+//frontend.use('/', express.static('public'));
